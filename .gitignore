@@ -1,3 +1,7 @@
+# R/Rstudio files
 .Rhistory
 .Rproj.user
 *.Rproj
+
+# images
+*.png
