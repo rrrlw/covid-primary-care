@@ -8,7 +8,7 @@ library("usmap")
 pcare <- read_csv("aamc-state-data.csv")
 
 #####PROCESS#####
-# add column for # of physicians per 100,000 population
+# add column for # of physicians over 60 per 100,000 population
 pcare <- mutate(pcare, Risk = Number * Over60 / 100)
 
 # only select states that can be plotted (remove DC, PR)
