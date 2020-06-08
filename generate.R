@@ -2,6 +2,7 @@
 suppressPackageStartupMessages(library("readr"))
 suppressPackageStartupMessages(library("dplyr"))
 suppressPackageStartupMessages(library("ggplot2"))
+suppressPackageStartupMessages(library("maps"))
 
 #####INPUT#####
 pcare <- read_csv("aamc-state-data.csv")
