@@ -1,53 +1,53 @@
 region,state,Number,Over60
-alabama,AL,196.7,35.0
-alaska,AK,256.7,32.1
-arizona,AZ,224.0,37.9
-arkansas,AR,188.2,34.1
-california,CA,243.8,33.2
-colorado,CO,262.5,31.5
-connecticut,CT,302.9,36.5
-delaware,DE,252.3,29.0
-district of columbia,DC,619.0,34.6
-florida,FL,240.7,39.2
-georgia,GA,202.9,32.7
-hawaii,HI,273.7,34.2
-idaho,ID,181.6,29.0
-illinois,IL,240.5,30.8
-indiana,IN,212.0,32.3
-iowa,IA,193.1,30.3
-kansas,KS,206.5,31.9
-kentucky,KY,214.6,36.6
-louisiana,LA,231.8,32.5
-maine,ME,305.7,36.0
-maryland,MD,306.1,33.1
-massachusetts,MA,353.7,28.5
-michigan,MI,249.7,35.3
-minnesota,MN,265.0,31.6
-mississippi,MS,174.8,42.4
-missouri,MO,236.3,35.8
-montana,MT,236.2,30.1
-nebraska,NE,214.5,32.7
-nevada,NV,185.8,33.2
-new hampshire,NH,287.6,37.7
-new jersey,NJ,271.0,33.5
-new mexico,NM,213.8,41.0
-new york,NY,304.1,35.0
-north carolina,NC,223.5,31.3
-north dakota,ND,217.1,30.1
-ohio,OH,248.6,34.5
-oklahoma,OK,189.1,39.9
-oregon,OR,271.5,31.2
-pennsylvania,PA,273.3,36.4
-puerto rico,PR,251.3,59.7
-rhode island,RI,325.3,29.2
-south carolina,SC,205.0,33.7
-south dakota,SD,219.1,35.1
-tennessee,TN,225.8,37.5
-texas,TX,199.9,32.0
-utah,UT,199.9,25.8
-vermont,VT,322.7,41.2
-virginia,VA,231.8,33.9
-washington,WA,246.3,33.7
-west virginia,WV,231.6,33.3
-wisconsin,WI,238.3,31.0
-wyoming,WY,199.6,25.4
+alabama,AL,77.2,35.0
+alaska,AK,112.8,32.1
+arizona,AZ,78.1,37.9
+arkansas,AR,79.9,34.1
+california,CA,96.2,33.2
+colorado,CO,95.4,31.5
+connecticut,CT,105.7,36.5
+delaware,DE,96.8,29.0
+district of columbia,DC,239.7,34.6
+florida,FL,86.8,39.2
+georgia,GA,79.1,32.7
+hawaii,HI,118.5,34.2
+idaho,ID,73.9,29.0
+illinois,IL,99.6,30.8
+indiana,IN,80.3,32.3
+iowa,IA,84.8,30.3
+kansas,KS,88.0,31.9
+kentucky,KY,77.3,36.6
+louisiana,LA,84.1,32.5
+maine,ME,128.9,36.0
+maryland,MD,116.2,33.1
+massachusetts,MA,134.3,28.5
+michigan,MI,97.8,35.3
+minnesota,MN,104.9,31.6
+mississippi,MS,65.9,42.4
+missouri,MO,86.6,35.8
+montana,MT,91.5,30.1
+nebraska,NE,88.2,32.7
+nevada,NV,72.3,33.2
+new hampshire,NH,105.9,37.7
+new jersey,NJ,97.7,33.5
+new mexico,NM,91.1,41.0
+new york,NY,112.9,35.0
+north carolina,NC,86.2,31.3
+north dakota,ND,87.0,30.1
+ohio,OH,93.7,34.5
+oklahoma,OK,73.9,39.9
+oregon,OR,109.4,31.2
+pennsylvania,PA,100.8,36.4
+puerto rico,PR,120.7,59.7
+rhode island,RI,117.5,29.2
+south carolina,SC,80.1,33.7
+south dakota,SD,92.8,35.1
+tennessee,TN,85.1,37.5
+texas,TX,72.9,32.0
+utah,UT,65.3,25.8
+vermont,VT,130.3,41.2
+virginia,VA,90.3,33.9
+washington,WA,100.6,33.7
+west virginia,WV,100.1,33.3
+wisconsin,WI,94.6,31.0
+wyoming,WY,79.8,25.4
