@@ -42,18 +42,23 @@ ggplot() +
   geom_polygon(data = state_data,
                aes(x = long, y = lat, group = group, fill = Risk),
                color = "black") +
-  scale_fill_gradient("At-risk", low = "lightblue", high = "darkblue") +
+  scale_fill_gradient("At-risk", low = "white", high = "midnightblue") +
   # bubbles w/ log(COVID cases)
   geom_point(data = covid,
              aes(x = long, y = lat, size = LogCases),
-             colour = "red", alpha = 0.45, shape = 16) +
-  scale_size_continuous(range = c(0, 1.25)) +
+             colour = "yellow", alpha = 0.45, shape = 19) +
+  scale_size_continuous("# cases",
+                        range = c(0, 1.15),
+                        labels = c("1-9", "10-99", "100-999",
+                                   "1000-9999", "10000-99999",
+                                   ">100000")) +
   # remove elements we don't need
   theme(axis.title = element_blank(),
         axis.text = element_blank(),
         axis.ticks = element_blank(),
         panel.grid = element_blank(),
-        panel.background = element_blank())
+        panel.background = element_blank(),
+        legend.key = element_rect(fill = "midnightblue"))
 
 # save bubble chloropleth
 ggsave(filename = "BubbleMap.png",
