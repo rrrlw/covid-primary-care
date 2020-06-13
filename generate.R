@@ -66,9 +66,9 @@ ggplot(data = state_data) +
                color = "black") +
   scale_fill_gradient("At-risk", low = "lightblue", high = "darkblue") +
   # bubbles w/ log(COVID cases)
-  geom_point(aes(x = Long, y = Lat, size = Projection),
-             colour = "yellow", alpha = 0.1) +
-  scale_size_continuous(range = c(0, 12.5)) +
+  geom_point(aes(x = Long, y = Lat, size = Current),
+             alpha = 1/20) +
+  scale_size_continuous(range = c(1, 10)) +
   #scale_size_continuous("# cases",
   #                      range = c(0, 1.15),
   #                      labels = c("1-9", "10-99", "100-999",
