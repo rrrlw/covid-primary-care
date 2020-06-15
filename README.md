@@ -4,6 +4,11 @@
 
 ## Purpose
 
+Since people over age 60 are at increased risk for severe disease course and death secondary to SARS-CoV-2 infection, primary care physicians over age 60 are more likely to see fewer patients than they did prior to the COVID-19 pandemic.
+This could be a result of infection, early retirement, or a transient decrease during transitions to virtual appointments.
+This project aims to identify which states in the U.S. are at highest risk of experiencing primary care shortages by exploring age distributions and COVID-19 pandemic spread in each U.S. state.
+The results could guide targeted funding and training of future primary care physicians in specific regions.
+
 ## Visualization
 
 <img src="BubbleMap.png" align="left" height="450" width="900"/><br>
