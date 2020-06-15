@@ -1,3 +1,11 @@
+### covid-cases.csv
+
+### generate.R
+
+### ihme-projection.csv
+
+### state-data.csv
+
 aamc-state-data.csv: contains data obtained from AAMC Physician Workforce Profile
 	- URL: https://www.aamc.org/data-reports/workforce/data/2019-state-profiles
 	- format: comma separated values
