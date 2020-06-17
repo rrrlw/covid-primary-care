@@ -26,7 +26,7 @@ pcare <- pcare %>%
 covid <- covid %>%
   #rename(long = Long_) %>%
   #rename(lat = Lat) %>%
-  filter(`6/4/2020` > 0) %>%
+  filter(`6/4/2020` > 0)
   #filter(lat > 25 & lat < 50 & long > -130 & long < -65) %>%
   #mutate(LogCases = log10(`6/4/2020`)) %>%
 
@@ -65,7 +65,7 @@ ggplot(data = state_data) +
   # map w/ states colored by # `physicians over 60` per 100K population
   geom_polygon(aes(x = long, y = lat, group = group, fill = Risk),
                color = "black") +
-  scale_fill_gradient("At-risk", low = "lightblue", high = "darkblue") +
+  scale_fill_gradient("At-risk", low = "white", high = "darkblue") +
   # bubbles w/ log(COVID cases)
   geom_point(aes(x = Long, y = Lat, size = Current),
              color = "orange") +
