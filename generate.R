@@ -18,23 +18,17 @@ pcare <- pcare %>%
   #filter(!(state %in% c("DC", "PR")))
 
 # covid:
-#   - only select date column that will actually be used
 #   IGNORE FOR NOW- rename Long_ to long (contains longitude)
 #   IGNORE FOR NOW- rename Lat to lat (contains latitude)
 #   - remove rows w/ zero cases (won't be plotted anyway, won't cause logarithm issues)
 #   IGNORE FOR NOW- remove rows not in continental United States
 #   IGNORE FOR NOW- take logarithm to make bubbles more aesthetically pleasing
-#   - group by state to prepare for summary
-#   - get the total cases per state
 covid <- covid %>%
-  select(region, `6/4/2020`) %>%
   #rename(long = Long_) %>%
   #rename(lat = Lat) %>%
   filter(`6/4/2020` > 0) %>%
   #filter(lat > 25 & lat < 50 & long > -130 & long < -65) %>%
   #mutate(LogCases = log10(`6/4/2020`)) %>%
-  group_by(`region`) %>%
-  summarise(state_cases = sum(`6/4/2020`))
 
 # projected:
 #   - summarise (sum) by state for projected cases as of 1-Oct-2020
@@ -46,7 +40,7 @@ projected <- projected %>%
 #   then add projected cases then standardize to per 100K population, then only select relevant columns
 pcare <- pcare %>%
   left_join(covid) %>%
-  mutate(Current = state_cases / TotalPop * 100000) %>%
+  mutate(Current = `6/4/2020` / TotalPop * 100000) %>%
   left_join(projected) %>%
   mutate(Projection = Projected / TotalPop * 100000) %>%
   select(region, state, Number, Risk,
