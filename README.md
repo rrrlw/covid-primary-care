@@ -23,7 +23,7 @@ Each state also has a single red dot whose radius corresponds to the number of c
 * **state-data.csv:** state-level AAMC workforce and geographical data.
 * **ihme-projection.csv:** projected number of SARS-CoV-2 cases in all U.S. states by 1 October 2020.
 
-For more details, see `data-dictionary.txt`.
+For more details, see the [data dictionary](https://github.com/rrrlw/covid-primary-care/blob/master/data-dictionary.md).
 
 ## Problems?
 
