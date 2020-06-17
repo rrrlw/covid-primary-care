@@ -49,9 +49,11 @@ pcare <- pcare %>%
   mutate(Current = state_cases / TotalPop * 100000) %>%
   left_join(projected) %>%
   mutate(Projection = Projected / TotalPop * 100000) %>%
-  select(region, state, Risk, Current, Projection, Long, Lat) %>%
-  mutate(curr_conc = Current / Risk,
-         proj_conc = Projection / Risk)
+  select(region, state, Number, Risk,
+         Current, Projection, Long, Lat) %>%
+  mutate(Remaining = Number - Risk,
+         curr_conc = Current / Remaining,
+         proj_conc = Projection / Remaining)
 
 # LOOK AT DATA HERE BEFORE NON-CONTINENTAL STATES ARE REMOVED
 
