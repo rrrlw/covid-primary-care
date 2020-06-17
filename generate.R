@@ -58,7 +58,10 @@ pcare <- pcare %>%
 # LOOK AT DATA HERE BEFORE NON-CONTINENTAL STATES ARE REMOVED
 
 # prepare map data
-pcare <- filter(pcare, !(region %in% c("puerto rico", "district of columbia")))
+pcare <- filter(pcare, !(region %in% c("puerto rico",
+                                       "district of columbia",
+                                       "alaska",
+                                       "hawaii")))
 states_pleth <- map_data("state")
 state_data <- left_join(states_pleth, pcare, by = "region")
 
@@ -71,8 +74,8 @@ ggplot(data = state_data) +
   scale_fill_gradient("At-risk", low = "lightblue", high = "darkblue") +
   # bubbles w/ log(COVID cases)
   geom_point(aes(x = Long, y = Lat, size = Current),
-             alpha = 1/20) +
-  scale_size_continuous(range = c(1, 10)) +
+             color = "orange") +
+  scale_size_continuous("SARS-CoV-2 cases", range = c(1, 8)) +
   #scale_size_continuous("# cases",
   #                      range = c(0, 1.15),
   #                      labels = c("1-9", "10-99", "100-999",
@@ -88,3 +91,4 @@ ggplot(data = state_data) +
 # save bubble chloropleth
 ggsave(filename = "BubbleMap.png",
        width = 8, height = 4)
+
