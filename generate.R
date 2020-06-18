@@ -5,6 +5,7 @@ suppressPackageStartupMessages(library("ggplot2"))
 suppressPackageStartupMessages(library("maps"))
 
 #####INPUT#####
+latlong <- read_csv("geo-data.csv")
 pcare <- read_csv("state-data.csv")
 covid <- read_csv("covid-cases.csv")
 projected <- read_csv("ihme-projection.csv")
@@ -14,7 +15,8 @@ projected <- read_csv("ihme-projection.csv")
 #   - add column for # of physicians over 60 per 100K population
 #   IGNORE FOR NOW- only select states that can be plotted (remove DC, PR)
 pcare <- pcare %>%
-  mutate(Risk = Number * Over60 / 100) #%>%
+  mutate(Risk = Number * Over60 / 100) %>%
+  left_join(latlong) #%>%
   #filter(!(state %in% c("DC", "PR")))
 
 # covid:
