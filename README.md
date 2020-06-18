@@ -18,10 +18,11 @@ Each state also has a single red dot whose radius corresponds to the number of c
 
 ## Data dictionary
 
-* **generate.R:** R script that generates the U.S. bubble map.
+* **generate.R:** R script that generates a [U.S. bubble chloropleth](https://github.com/rrrlw/covid-primary-care/blob/master/BubbleMap.png).
 * **covid-cases.csv:** number of SARS-CoV-2 cases in all U.S. states, as of 4 June 2020.
-* **state-data.csv:** state-level AAMC workforce and geographical data.
+* **geo-data.csv:** state-level geographical data.
 * **ihme-projection.csv:** projected number of SARS-CoV-2 cases in all U.S. states by 1 October 2020.
+* **state-data.csv:** state-level AAMC workforce data.
 
 For more details, see the [data dictionary](https://github.com/rrrlw/covid-primary-care/blob/master/data-dictionary.md).
 
